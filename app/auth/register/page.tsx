@@ -82,7 +82,7 @@ export default function RegisterPage() {
     if (!validateForm()) return;
 
     try {
-      const response = await fetch("https://eduvibe-onlineeducationplaform-production.up.railway.app/api/register", {
+      const response = await fetch("https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

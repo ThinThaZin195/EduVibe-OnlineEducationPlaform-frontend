@@ -12,7 +12,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
 type Quiz = {
   id: number;

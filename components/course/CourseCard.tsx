@@ -26,7 +26,7 @@ export default function CourseCard({
     const cleanPath = imgSource.startsWith("/")
       ? imgSource.substring(1)
       : imgSource;
-    return `https://eduvibe-onlineeducationplaform-production.up.railway.app/storage/${cleanPath}`;
+    return `https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/storage/${cleanPath}`;
   };
 
   return (

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import CourseCard from "@/components/course/CourseCard";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
 export default function CoursesPage() {
   const [courses, setCourses] = useState<any[]>([]);
@@ -142,7 +142,7 @@ export default function CoursesPage() {
               const finalImage = course.image
                 ? (course.image.startsWith("http")
                     ? course.image
-                    : `https://eduvibe-onlineeducationplaform-production.up.railway.app/storage/${course.image}`)
+                    : `https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/storage/${course.image}`)
                 : "/images/placeholder.png";
 
               return (

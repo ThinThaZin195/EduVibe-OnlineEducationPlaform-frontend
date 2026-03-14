@@ -18,7 +18,7 @@ export default function LoginPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://eduvibe-onlineeducationplaform-production.up.railway.app/api/login", {
+      const response = await fetch("https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

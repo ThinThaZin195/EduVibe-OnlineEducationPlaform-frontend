@@ -4,7 +4,7 @@ import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Wallet, Loader2, ArrowLeft, PlusCircle, CreditCard, ShieldCheck } from "lucide-react";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
 type Transaction = {
   id: string;

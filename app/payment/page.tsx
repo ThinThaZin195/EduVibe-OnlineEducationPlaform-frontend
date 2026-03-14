@@ -7,7 +7,7 @@ import {
   X, AlertCircle, ShieldCheck, ArrowLeft 
 } from "lucide-react";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
 function PaymentContent() {
   const searchParams = useSearchParams();

@@ -15,8 +15,8 @@ import {
   BookOpen,
 } from "lucide-react";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
-const STORAGE_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/storage";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
+const STORAGE_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/storage";
 
 export default function TeacherStudio() {
   const [activeTab, setActiveTab] = useState("courses");

@@ -11,7 +11,7 @@ export default function MyCoursesPage() {
   useEffect(() => {
     const fetchEnrolledCourses = async () => {
       const token = localStorage.getItem("token");
-      const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+      const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
       try {
 
@@ -67,7 +67,7 @@ export default function MyCoursesPage() {
     if (!imgSource) return "https://images.unsplash.com/photo-1501504905953-f84476b0dfbb?q=80&w=1000&auto=format&fit=crop";
     if (imgSource.startsWith("http")) return imgSource;
     const cleanPath = imgSource.startsWith("/") ? imgSource.substring(1) : imgSource;
-    return `https://eduvibe-onlineeducationplaform-production.up.railway.app/storage/${cleanPath}`;
+    return `https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/storage/${cleanPath}`;
   };
 
   return (

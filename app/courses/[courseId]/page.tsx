@@ -12,7 +12,7 @@ import {
   Loader2,
 } from "lucide-react";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
 export default function CourseDetailPage() {
   const params = useParams();
@@ -104,7 +104,7 @@ export default function CourseDetailPage() {
   const imageSrc = course.image
     ? course.image.startsWith("http")
       ? course.image
-      : `https://eduvibe-onlineeducationplaform-production.up.railway.app/storage/${course.image}`
+      : `https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/storage/${course.image}`
     : "/images/placeholder.png";
 
   return (

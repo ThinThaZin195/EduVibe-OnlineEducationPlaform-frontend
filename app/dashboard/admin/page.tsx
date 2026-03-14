@@ -9,7 +9,7 @@ import {
   Clock, MoreVertical, Printer, Megaphone, Globe, Download, LogOut, Calendar
 } from "lucide-react";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
 export default function AdminDashboardTailwind() {
   const router = useRouter();
@@ -403,7 +403,7 @@ export default function AdminDashboardTailwind() {
                     <div key={course.id} className="flex items-center justify-between p-4 border rounded-xl">
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden border">
-                           {course.image ? <img src={`https://eduvibe-onlineeducationplaform-production.up.railway.app/storage/${course.image}`} className="w-full h-full object-cover" alt="" /> : <BookOpen size={20} className="text-slate-400" />}
+                           {course.image ? <img src={`https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/storage/${course.image}`} className="w-full h-full object-cover" alt="" /> : <BookOpen size={20} className="text-slate-400" />}
                         </div>
                         <div><p className="text-sm font-bold">{course.title}</p><p className="text-xs text-slate-400">Teacher ID: {course.teacher_id}</p></div>
                       </div>

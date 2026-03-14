@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Loader2, CheckCircle, ArrowLeft, Trophy } from "lucide-react";
 import CertificateModal from "@/components/CertificateModal";
 
-const API_URL = "https://eduvibe-onlineeducationplaform-production.up.railway.app/api";
+const API_URL = "https://eduvibe-onlineeducationplaform-backend-production.up.railway.app/api";
 
 export default function AssignmentPage() {
   const params = useParams();
