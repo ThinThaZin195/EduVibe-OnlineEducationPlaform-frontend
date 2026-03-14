@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Edu_Vibe Gold Theme */
+  --gold: #C9A227;
+  --gold-dark: #A8891C;
+}
+
+.dark, [data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: slideUpFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
